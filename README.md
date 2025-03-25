@@ -27,7 +27,7 @@ To run this website locally on your machine, follow these steps:
 
     Clone the repository:
 
-git clone [https://github.com/yourusername/my-website.git](https://github.com/Abhinavcoderrrrr/Cube-Solving.git)
+git clone https://github.com/Abhinavcoderrrrr/Cube-Solving.git
 
 Navigate into the project folder:
 
@@ -74,4 +74,4 @@ For any queries or feedback, feel free to contact me at:
 
     Email: arjitjha47@gmail.com(IN)
 
-    GitHub: [https://github.com/yourusername](https://github.com/Abhinavcoderrrrr)
+    GitHub: https://github.com/Abhinavcoderrrrr
