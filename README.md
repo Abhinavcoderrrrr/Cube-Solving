@@ -72,6 +72,6 @@ Contact
 
 For any queries or feedback, feel free to contact me at:
 
-    Email: your-email@example.com
+    Email: arjitjha47@gmail.com(IN)
 
-    GitHub: https://github.com/yourusername
+    GitHub: [https://github.com/yourusername](https://github.com/Abhinavcoderrrrr)
