@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cube solving page : By Abhinav jha</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <link rel="icon" href="logo.jpg" type="image/x-icon">
+</head>
+<body>
+    <center>
+        <header class="heading solvingpage-header">
+            <h1>Cube solving</h1>
+        </header>
+        <div class="Container">
+            <div><button class = "back-btn" onclick="navMain()">Back</button></div>
+            <div class="infos">
+                <p>The Rubik’s Cube is a timeless puzzle that challenges the mind and enhances problem-solving skills. Invented in 1974 by Ernő Rubik, it consists of a 3x3 grid with colorful squares, and the goal is to align all squares of the same color on each face. While it may seem simple at first, solving the cube requires logic, strategy, and memory. Over the years, cube solving has evolved into a competitive sport, with speedcubers solving the puzzle in mere seconds. Beyond being a fun pastime, the Rubik’s Cube is also used as a tool to teach spatial reasoning and algorithms in educational settings, making it a versatile and valuable challenge for all ages. The solving trick below</p>
+            </div>
+            <div class="infos">
+                <p>
+                    In cube solving, formulas, often referred to as <strong>algorithms</strong>, are sequences of moves that help solvers manipulate the Rubik’s Cube to reach a desired configuration. These algorithms are typically based on patterns and are essential for solving the cube efficiently. Here's some information about the formulas used in cube solving:
+                  </p>
+                  
+                  <p>
+                    <strong>1. Basic Notation for Algorithms:</strong><br>
+                    The Rubik’s Cube uses a system of notation to represent moves. Each face of the cube is designated by a letter: <br>
+                    - <strong>U</strong> = Up<br>
+                    - <strong>D</strong> = Down<br>
+                    - <strong>L</strong> = Left<br>
+                    - <strong>R</strong> = Right<br>
+                    - <strong>F</strong> = Front<br>
+                    - <strong>B</strong> = Back<br>
+                    A move is represented by a single letter (e.g., <code>R</code> means turn the Right face 90 degrees clockwise). An apostrophe (<code>'</code>) after a letter (e.g., <code>R'</code>) means to turn the face 90 degrees counterclockwise. A <code>2</code> after a letter (e.g., <code>R2</code>) means to turn the face 180 degrees.
+                  </p>
+                  
+                  <p>
+                    <strong>2. Common Algorithms in Cube Solving:</strong><br>
+                    Algorithms are grouped into stages based on the method used to solve the cube. Below are some well-known algorithms:
+                  </p>
+                  
+                  <p>
+                    <strong>Fridrich Method (CFOP):</strong><br>
+                    The CFOP method is one of the most popular speedcubing methods. It stands for: <br>
+                    - <strong>C</strong>ross: Solve the first layer’s cross.<br>
+                    - <strong>F</strong>2L: Solve the first two layers (F2L pairs).<br>
+                    - <strong>O</strong>LL: Orient the last layer.<br>
+                    - <strong>P</strong>LL: Permute the last layer.<br>
+                    <strong>Example OLL Algorithm</strong> (for orienting the last layer):<br>
+                    <code>F R U' R' U' R U R' U' R U R'</code>
+                  </p>
+                  
+                  <p>
+                    <strong>Roux Method:</strong><br>
+                    This method involves solving the cube layer by layer, but with a focus on blocks rather than solving the whole layer at once. Key algorithms in Roux include: <br>
+                    - <strong>CMLL</strong> (Corner Orientation of the Last Layer): This step orients the last layer's corners.<br>
+                    - <strong>LSE</strong> (Last Six Edges): Solving the remaining six edges in the last layer.
+                  </p>
+                  
+                  <p>
+                    <strong>Petrus Method:</strong><br>
+                    A less common method, but it focuses on solving the cube by first creating a 2x2x2 block, then expanding it to 2x2x3, and then finishing the last layers. Algorithms used in Petrus are primarily designed for block-building and edge orientation.
+                  </p>
+                  
+                  <p>
+                    <strong>3. Algorithms for Specific Cases:</strong><br>
+                    There are specific algorithms for different cases that occur during solving, especially in the last layer. Here are some examples:
+                  </p>
+                  
+                  <p>
+                    <strong>PLL (Permutation of the Last Layer):</strong><br>
+                    This step permutes the last layer’s pieces (edges and corners) without disturbing their orientation. There are 21 different PLL cases with unique algorithms.<br>
+                    <strong>Example PLL Algorithm</strong> (for the "U-perm"):<br>
+                    <code>R' U' R' U R' U' R' U R U R2</code>
+                  </p>
+                  
+                  <p>
+                    <strong>OLL (Orientation of the Last Layer):</strong><br>
+                    This step orients the pieces of the last layer so that all the top face pieces are facing the same direction, ready for permutation. There are 57 different OLL cases.<br>
+                    <strong>Example OLL Algorithm</strong> (for the "Sune" case):<br>
+                    <code>R U R' U R U2 R'</code>
+                  </p>
+                  
+                  <p>
+                    <strong>4. Beginner’s Method:</strong><br>
+                    The <strong>Beginner’s Method</strong> uses simpler algorithms and involves solving the cube layer by layer. It’s designed for those new to the Rubik's Cube, where algorithms are learned for solving the first layer, the middle layer, and the last layer.<br>
+                    <strong>Example Beginner’s Method Algorithm</strong> (for solving the first layer’s edges):<br>
+                    <code>F R U R' U' F'</code>
+                  </p>
+                  
+                  <p>
+                    <strong>5. Advanced Techniques:</strong><br>
+                    - <strong>Finger Tricks:</strong> Speedcubers often use finger tricks to execute algorithms faster, reducing the need for full hand movements.<br>
+                    - <strong>Parity Errors:</strong> These are situations in larger cubes (like the 4x4 or 5x5) where the last layer is unsolvable without special algorithms due to parity errors. These errors happen because of the way pieces are swapped or flipped.
+                  </p>
+                  
+                  <p>
+                    <strong>6. Cube Notation in Advanced Solving:</strong><br>
+                    As you progress with cube solving, understanding cube notation becomes more crucial because algorithms can get complex and involve multi-step sequences. Some advanced notations you may come across include:<br>
+                    - <strong>x, y, z</strong>: These refer to rotations of the whole cube (e.g., <code>x</code> rotates the cube around the x-axis).<br>
+                    - <strong>M, S, E</strong>: These refer to middle-layer moves. <code>M</code> is the middle layer's movement in the same direction as <code>L</code> or <code>R</code>.<br>
+                    - <strong>U2, D2, L2</strong>, etc.: These mean turning a layer 180 degrees.
+                  </p>
+                  
+                  <p>
+                    <strong>Conclusion:</strong><br>
+                    The key to mastering Rubik's Cube solving is understanding and memorizing the algorithms required for each stage. Whether using beginner’s methods or advanced techniques like CFOP or Roux, algorithms form the backbone of cube solving. As you continue practicing, you’ll become more familiar with recognizing different cube patterns and applying the appropriate algorithms to solve the puzzle efficiently.
+                  </p>
+                  
+            </div>
+        </div>
+        <div class="video-section">
+            <div class="video-container">
+                <iframe class="video" src="https://www.youtube.com/embed/7Ron6MN45LY?si=zkOTHu6jjQkMVWSX" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p class="video-caption">English Video</p>
+            </div>
+            
+            <div class="video-container">
+                <iframe class="video" src="https://www.youtube.com/embed/CHSCbGDNAk8?si=Rmvv4Ps3qgiOVAfT" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p class="video-caption">Hindi Video</p>
+            </div>
+            <footer>
+                <p>&copy; 2025 Abhinav Jha. All rights reserved.</p>
+              </footer> 
+        </div>        
+    </center>
+</body>
+</html>
